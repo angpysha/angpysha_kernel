@@ -161,11 +161,41 @@ config CPU_FREQ_GOV_LAZY
 	  To compile this driver as a module, choose M here: the
 	  module will be called cpufreq_performance.
 
+config CPU_FREQ_GOV_VIRTOUS
+	tristate "'virtous' governor"
+	help
+	  This cpufreq governor sets the frequency statically to the
+	  highest available CPU frequency.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called cpufreq_performance.
+
+config CPU_FREQ_GOV_WHEATLEY
+	tristate "'wheatley' governor"
+	help
+	  This cpufreq governor sets the frequency statically to the
+	  highest available CPU frequency.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called cpufreq_performance.
+
 config CPU_FREQ_DEFAULT_GOV_SMARTASS2
 	bool "smartass2"
 	select CPU_FREQ_GOV_SMARTASS2
 	help
 	Use the CPUFreq governor 'smartassV2' as default.
+
+config CPU_FREQ_DEFAULT_GOV_WHEATLEY
+	bool "wheatley"
+	select CPU_FREQ_GOV_WHEATLEY
+	help
+	Use the CPUFreq governor 'wheatley' as default.
+
+config CPU_FREQ_DEFAULT_GOV_VIRTOUS
+	bool "virtous"
+	select CPU_FREQ_GOV_VIRTOUS
+	help
+	Use the CPUFreq governor 'virtous' as default.
 
 config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	bool "interactive"
