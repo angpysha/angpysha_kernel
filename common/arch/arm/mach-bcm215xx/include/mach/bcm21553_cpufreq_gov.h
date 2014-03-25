@@ -22,21 +22,23 @@
 enum {
 	BCM21553_CORECLK_KHZ_156 = (156U * 1000),
 	BCM21553_CORECLK_KHZ_312 = (312U * 1000),
+	/*BCM21553_CORECLK_KHZ_468 = (468U * 1000),*/
 	BCM21553_CORECLK_KHZ_624 = (624U * 1000),
 	BCM21553_CORECLK_KHZ_780 = (780U * 1000),
 	BCM21553_CORECLK_KHZ_832 = (832U * 1000),
 	BCM21553_CORECLK_KHZ_936 = (936U * 1000),
 	BCM21553_CORECLK_KHZ_1040 = (1040U * 1000),
-	BCM21553_CORECLK_KHZ_1248 = (1248U * 1000),
+	/*BCM21553_CORECLK_KHZ_1248 = (1248U * 1000),*/
 };
 
 struct bcm21553_cpufreq_gov_plat {
-	unsigned int freq_turbo3;
+	/*unsigned int freq_turbo3;*/
 	unsigned int freq_turbo2;
 	unsigned int freq_turbo;
 	unsigned int freq_normal;
 	unsigned int freq_normal2;
 	unsigned int freq_normal3;
+	/*unsigned int freq_med;*/
 	unsigned int freq_slow;
 	unsigned int freq_slow2;
 };
